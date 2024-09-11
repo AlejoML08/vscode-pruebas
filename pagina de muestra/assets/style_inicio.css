@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #a394e6;
+  backdrop-filter: blur(5px);
+  background-image: url(../imagenes/layered-waves-haikei\ \(3\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Estilos del nav */
+.nav {
+  backdrop-filter: blur(5px);
+  padding: 2em;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  filter: drop-shadow(5px);
+  border-radius: 10px;
+}
+
+.nav-left {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-right {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+/* Estilos del perfil */
+.nav-perfil {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-perfil-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../imagenes/usuario\ alt.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px 50px;
+}
+
+/* Estilos responsivos */
+@media screm and (max-width: 850px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .nav-left {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-right {
+    margin-right: 0;
+  }
+
+  .nav-link {
+    padding: 10px;
+  }
+
+  .nav-perfil {
+    display: block;
+  }
+
+  .nav-toggle-icon {
+    display: none;
+  }
+}
+
+@media scream and (max-width: 850px) {
+  .nav {
+    padding: 0.5em;
+  }
+
+  .nav-left {
+    padding: 0.5em;
+  }
+
+  .nav-right {
+    padding: 0.5em;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+.snap-container {
+  scroll-snap-type: y proximity;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.snap-item {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.flecha{
+  position: relative;
+  left: 46.6%;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 2.7em;
+  color: white;
+}
+section {
+  backdrop-filter: blur(10px);
+  padding: 100px;
+  background-image: url(../imagenes/layered-waves-haikei\ \(9\).png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tool-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tool-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.tool-card h2 {
+  margin-top: 0;
+}
+
+.tool-card p {
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color:#5D45CF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.sec-conten {
+  position: relative;
+  background: #423386;
+  padding: 100px;
+}
+
+/* pie de pagina */
+
+footer {
+  background-image: url(../imagenes/layered-waves-haikei\ \(5\).png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(50px);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-4 {
+  flex-basis: 33.33%;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  clear: both;
+}
+/* nosotros */
+.art-nosotros{
+  backdrop-filter: blur(10px);
+  color: white;
+  font-size: 1.6em;
+  background-color: rgb(93, 69, 207 0.7);
+  border-radius: 8px;
+  padding: 0px;
+  margin: 10px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
